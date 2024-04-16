@@ -29,7 +29,7 @@ export class FoodService {
     return this.foodRespository.find();
   }
 
-  findOne(id: number): Promise<Food> {
+  async findOne(id: number): Promise<Food> {
     return this.foodRespository.findOneBy({ id: id });
   }
 
